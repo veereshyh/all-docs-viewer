@@ -2,7 +2,11 @@ import "./styles.css";
 import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 
 export default function App() {
-  const docs = [{ uri: require("../public/dummy.pdf") }];
+  const docs = [
+    { uri: require("../public/dummy.pdf") },
+    { uri: require("../public/document.doc") },
+    { uri: require("../public/excel.xlsx") }
+  ];
 
   return (
     <div className="App">
