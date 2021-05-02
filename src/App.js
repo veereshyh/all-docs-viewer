@@ -1,0 +1,24 @@
+import "./styles.css";
+import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+
+export default function App() {
+  const docs = [{ uri: require("../public/dummy.pdf") }];
+
+  return (
+    <div className="App">
+      <h1>Sample react-doc-viewer</h1>
+      <DocViewer
+        pluginRenderers={DocViewerRenderers}
+        documents={docs}
+        config={{
+          header: {
+            disableHeader: false,
+            disableFileName: false,
+            retainURLParams: false
+          }
+        }}
+        style={{ height: 500 }}
+      />
+    </div>
+  );
+}
