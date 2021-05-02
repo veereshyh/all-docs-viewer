@@ -13,6 +13,8 @@ Created APP with create-react-app.
 Steps to run app: 
 
 cd all-docs-viewer
+
+
 npm start
 
 
