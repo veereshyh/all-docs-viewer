@@ -3,6 +3,7 @@ import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 
 export default function App() {
   const docs = [
+    { uri: require("../public/custom.pdf") },
     { uri: require("../public/dummy.pdf") },
     { uri: require("../public/document.doc") },
     { uri: require("../public/excel.xlsx") }
@@ -21,7 +22,7 @@ export default function App() {
             retainURLParams: false
           }
         }}
-        style={{ height: 500 }}
+        style={{ height: 1000 }}
       />
     </div>
   );
